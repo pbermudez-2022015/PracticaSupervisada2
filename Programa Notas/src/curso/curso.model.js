@@ -6,20 +6,20 @@ const cursoSchema = Schema({
         required: true
     },
 
-     descripcion: {
+    descripcion: {
         type: String,
         required: true
-    }, 
-    
-    keeper: {
+    },
+
+    Profesor: {
         type: Schema.Types.ObjectId,
         ref: 'name',
         required: true
-        
+
     }
-}, { 
-        versionKey: false 
-    
+}, {
+    versionKey: false
+
 })
 
 export default model('curso', cursoSchema)
